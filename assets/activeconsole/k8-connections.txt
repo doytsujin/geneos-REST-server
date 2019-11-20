@@ -1,0 +1,2 @@
+localhost~31102~gateway-k8-lab0
+localhost~30503~gateway-k8-lab1

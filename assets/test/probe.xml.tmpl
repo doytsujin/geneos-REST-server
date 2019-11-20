@@ -1,0 +1,44 @@
+{{define "body"}}<?xml version="1.0" encoding="ISO-8859-1"?>
+<netprobe
+        compatibility="1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://schema.itrsgroup.com/GA2011.2-110303/netprobe.xsd">
+        <selfAnnounce>
+                <enabled>true</enabled>
+                <retryInterval>60</retryInterval>
+                <requireReverseConnection>false</requireReverseConnection>
+                <probeName>{{.Probename}}</probeName>
+                <managedEntity>
+                        <name>{{.Managedentity}}</name>
+                        <attributes>
+                                <attribute name="COUNTRY">USA</attribute>
+                                <attribute name="CITY">New York</attribute>
+                                <attribute name="ENVIRONMENT">PROD</attribute>
+                        </attributes>
+                        <variables>
+                                <var name="var_string">
+                                        <string>selfProbe</string>
+                                </var>
+                                <var name="var_double">
+                                        <double>10.1</double>
+                                </var>
+                        </variables>
+                        <types>
+                                <type>Infrastructure</type>
+                                <type>Application</type>
+                        </types>
+                </managedEntity>
+                <gateways>
+				                        <gateway>
+                                <hostname>gateway-k8-lab1</hostname>
+                                <port>7039</port>
+                        </gateway>
+                        <gateway>
+                                <hostname>gateway-k8-lab0</hostname>
+                                <port>7039</port>
+                        </gateway>
+
+                </gateways>
+        </selfAnnounce>
+</netprobe>
+{{end}}
