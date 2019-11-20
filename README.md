@@ -15,10 +15,4 @@ Uses the template file assets/netprobe/probe.xml.tmpl to generate the
 
 Simply serves up a connection file from assets/activeconsole. Right now this is generated outside this program but could be incorporated. 
 
-## TODO
 
-- version the REST API ex. /v1/netprobe...
-
-- add generation of connection files as opposed to serving static files
-
-- add serving static include files
