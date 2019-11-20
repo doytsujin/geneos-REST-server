@@ -7,7 +7,7 @@ This currently serves up connection files for the ActiveConsole and netprobe con
 
 /netprobe/:netprobe
 
-Uses the template file assets/netprobe/probe.xml.tmpl to generate the  
+Uses the template file assets/netprobe/probe.xml.tmpl to generate the configuration.
 
 ## Active Console
 
